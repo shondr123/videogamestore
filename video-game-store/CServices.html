@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="VGSstyle.css" />
+  <link rel="icon" href="/images/favico.ico">
+  <title>Customer Services</title>
+  <style>
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      text-align: center;
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      width: 300px;
+    }
+
+    .form-container input,
+    .form-container button {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    .form-container button {
+      background-color: cyan;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #00e0e0;
+    }
+
+    .form-container ::placeholder {
+      background-color: aquamarine;
+      color: #2c2c2c;
+    }
+
+    .form-container img {
+      margin-top: 20px;
+      width: 120px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav class="main-nav">
+      <a href="/main.html">Home</a>
+      <a href="/marketplace.html">Market Place</a>
+    </nav>
+    <hr/>
+  </header>
+
+  <main class="form-container">
+    <p>
+      Can't find a game you’re looking for?<br>
+      Don't worry! Contact us below:
+    </p>
+
+    <form action="/thankyou.html" method="get">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="My name is..." required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="game">Game You're Looking For</label>
+      <input type="text" id="game" name="game" placeholder="Enter game name">
+
+      <button type="submit">Send!</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <img src="/images/costumerservice.jpeg" alt="Customer Service">
+  </main>
+
+  <footer>
+    <p class="trademark">© 2025 VideoGameStore™</p>
+  </footer>
+</body>
+</html>

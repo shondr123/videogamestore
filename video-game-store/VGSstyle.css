@@ -1,0 +1,450 @@
+body {
+  background-image: url("/images/VideoStoreBG.jpeg");
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#f0f0f0;
+  
+
+}
+h1 {
+    font-family: sans-serif;
+    color:#a3ffe5;
+}
+
+a{
+    display:block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffd700;
+    text-align: center;
+    margin: 0;
+    
+}
+
+p{
+    font-size: larger;
+    display: block;
+    text-align: center;
+}
+
+button{
+    background-color: cyan;
+    color:black;
+}
+::placeholder{
+    background-color: aquamarine;
+    color: #2c2c2c;
+}
+.image-table{
+    margin: auto;
+    border-spacing: 20px;
+}
+.image-table td {
+    vertical-align: top;
+    overflow: visible;
+}
+.image-table img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.image-table p{
+    margin-top: 8px;
+    font-size: 14px;
+    color:#ffd700;
+}
+
+.img-container{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.game-img{
+    width: 150px;
+    transition: 0.3s ease;
+}
+
+.game-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.game-cover{
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+}
+
+.sticker-wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.sticker{
+    position:absolute;
+    top:8px;
+    right:8px;
+    background-color: red;
+    color:#ffd700;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    transform: rotate(10deg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Layout structure for game page */
+.game-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Game and sidebar images */
+.game-cover {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000055;
+  margin-bottom: 20px;
+}
+
+.sidebar-img {
+  width: 80px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Footer / trademark */
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.trademark {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Optional nav style */
+nav a {
+  margin: 0 10px;
+  color: #ffd700;
+  text-decoration: none;
+}
+
+h1{
+    font-size:50px;
+}
+a {
+  text-decoration: none;     /* removes the underline */
+  color: #ffd700;
+  font-size: 18px;           /* makes the text bigger */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:hover {
+  color: #a3ffe5;
+  text-decoration: underline;  /* if you want underline only on hover */
+}
+/* Keep your existing styles like background */
+body {
+  background-image: url("/images/VideoStoreBG.jpeg");
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+}
+
+/* Sticky Nav Bar */
+.main-nav {
+  position: sticky;
+  top: 0;
+  background-color: #2c2c2c;
+  padding: 10px;
+  z-index: 1000;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+.main-nav a {
+  display: inline-block;
+  margin: 0 15px;
+  color: #ffd700;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.main-nav a:hover {
+  color: cyan;
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #a3ffe5;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.contact-form input::placeholder {
+  color: #999;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: cyan;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-buttons button:hover {
+  background-color: #00ffff;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.trademark {
+  font-size: 12px;
+  color: #aaa;
+}
+.home-info {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255,255,255,0.1);
+}
+
+.discount-banner img {
+  margin-top: 20px;
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.discount-banner img:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+.sidebar .sticker {
+  font-size: 10px;
+  padding: 3px 8px;
+}
+.highlight-link {
+  font-size: 20px;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.highlight-link:hover {
+  color: #fff176;
+  text-decoration: none;
+}
+
+a:hover, button:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  opacity: 0.9;
+}
+.testimonials {
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #a3ffe5;
+  margin: 0;
+}
+
+.testimonial p {
+  margin-top: 5px;
+  color: #ccc;
+}
+
+
+.filter-bar {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.filter-bar h2 {
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-group label {
+  color: #a3ffe5;
+  font-weight: bold;
+}
+
+.filter-group button {
+  background-color: #ffd700;
+  border: none;
+  padding: 8px 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter-group button:hover {
+  background-color: #e6c200;
+}
+
+.filter-group select {
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  nav.main-nav, nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .game-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .sidebar-img {
+    width: 100px;
+    height: auto;
+  }
+
+  .game-cover {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .image-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-table td {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .filter-buttons,
+  .filter-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
